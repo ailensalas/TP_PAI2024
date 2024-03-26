@@ -1,0 +1,33 @@
+---
+title: "Tarea 1"
+author: "Ailen"
+format: gfm
+editor: visual
+---
+
+## Figuras
+
+A continuación se incluye una figura creada con código, permitiendo que el mismo sea visible:
+
+```{r}
+#| echo: false
+suppressPackageStartupMessages(library(MASS)) 
+data(Boston) 
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+```{r}
+#| echo: true
+ggplot(Boston) +   aes(x = rm, y = medv, color = rad) +   geom_point(size = 3) +   theme_linedraw()
+```
+
+La siguiente figura fue agregada desde un archivo:
+
+```{r}
+#| echo: false
+2 * 2e
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
